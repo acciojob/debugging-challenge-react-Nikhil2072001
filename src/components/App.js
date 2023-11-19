@@ -7,9 +7,12 @@ const App = () => {
     function handleChange(){
       setCount(count + 1) ;
     }
+    function givealert(){
+      alert("cant edit it")
+    }
   return (
     <div className="ball">
-      <h1 className="count" onDoubleClick={() => { alert("cant edit it") }}>{count}</h1>
+      <h1 className="count" onDoubleClick={() => givealert}>{count}</h1>
       <button className='increment-button' onClick={() => handleChange}>Increment</button>
     </div>
   )
